@@ -1,0 +1,18 @@
+{
+  "label": "Rig robot and add native helper objects",
+  "operations": [
+    {"method":"group.add","ref":"left","params":{"name":"left_arm_joint","parent":"robot","origin":[-6,16,0]}},
+    {"method":"group.add","ref":"right","params":{"name":"right_arm_joint","parent":"robot","origin":[6,16,0]}},
+    {"method":"group.add","ref":"head","params":{"name":"head_joint","parent":"robot","origin":[0,18,0]}},
+    {"method":"element.update","params":{"id":"left_arm","parent":"$left"}},
+    {"method":"element.update","params":{"id":"right_arm","parent":"$right"}},
+    {"method":"element.update","params":{"id":"head","parent":"$head"}},
+    {"method":"element.update","params":{"id":"left_eye","parent":"$head"}},
+    {"method":"element.update","params":{"id":"right_eye","parent":"$head"}},
+    {"method":"element.update","params":{"id":"antenna","parent":"$head"}},
+    {"method":"locator.add","params":{"name":"hand_socket","parent":"$right","position":[7,8,0]}},
+    {"method":"null_object.add","params":{"name":"look_target","parent":"robot","position":[0,22,18]}},
+    {"method":"bounding_box.add","params":{"name":"robot_hitbox","parent":"robot","from":[-8,0,-4],"to":[8,30,4],"function":["hitbox"],"visibility":false}},
+    {"method":"spline.add","params":{"name":"back_cable","parent":"robot","points":[[-3,15,-3],[-5,10,-5],[0,8,-5],[3,15,-3]],"radius":0.45,"radial_resolution":6,"tubular_resolution":10}}
+  ]
+}

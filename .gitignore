@@ -1,0 +1,13 @@
+.cache/
+artifacts/
+__pycache__/
+*.pyc
+dist/
+node_modules/
+output/
+.env
+.env.*
+
+# Publish only the bridge plugin; locally created models and textures stay local.
+/plugin/*
+!/plugin/codex_blockbench_bridge.js

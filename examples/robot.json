@@ -1,0 +1,16 @@
+{
+  "label": "Codex: mixed cube and mesh robot",
+  "operations": [
+    {"method":"group.add","ref":"root","params":{"name":"robot","origin":[0,0,0]}},
+    {"method":"cube.add","params":{"name":"body","parent":"$root","from":[-5,7,-3],"to":[5,17,3],"color":1}},
+    {"method":"cube.add","params":{"name":"head","parent":"$root","from":[-4,18,-3],"to":[4,25,3],"color":0}},
+    {"method":"cube.add","params":{"name":"left_eye","parent":"$root","from":[-2.8,21,3],"to":[-0.8,23,3.4],"color":3}},
+    {"method":"cube.add","params":{"name":"right_eye","parent":"$root","from":[0.8,21,3],"to":[2.8,23,3.4],"color":3}},
+    {"method":"cube.add","params":{"name":"left_arm","parent":"$root","from":[-8,8,-2],"to":[-5.5,16,2],"origin":[-6,16,0],"rotation":[0,0,-10],"color":4}},
+    {"method":"cube.add","params":{"name":"right_arm","parent":"$root","from":[5.5,8,-2],"to":[8,16,2],"origin":[6,16,0],"rotation":[0,0,10],"color":4}},
+    {"method":"cube.add","params":{"name":"left_leg","parent":"$root","from":[-4,0,-2],"to":[-1,7,2],"color":4}},
+    {"method":"cube.add","params":{"name":"right_leg","parent":"$root","from":[1,0,-2],"to":[4,7,2],"color":4}},
+    {"method":"mesh.add","params":{"name":"antenna","parent":"$root","origin":[0,25,0],"color":5,"vertices":{"a":[-1,0,-1],"b":[1,0,-1],"c":[1,0,1],"d":[-1,0,1],"tip":[0,5,0]},"faces":[["a","b","c","d"],["a","tip","b"],["b","tip","c"],["c","tip","d"],["d","tip","a"]]}},
+    {"method":"mesh.add","params":{"name":"chest_badge","parent":"$root","origin":[0,12,3.1],"color":3,"vertices":{"a":[-2,0,0],"b":[0,2,0],"c":[2,0,0],"d":[0,-2,0],"tip":[0,0,1]},"faces":[["a","d","c","b"],["a","tip","b"],["b","tip","c"],["c","tip","d"],["d","tip","a"]]}}
+  ]
+}

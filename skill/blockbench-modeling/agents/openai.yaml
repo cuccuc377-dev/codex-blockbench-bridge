@@ -1,0 +1,4 @@
+interface:
+  display_name: "Blockbench 建模"
+  short_description: "使用 Blockbench 原生工具建模，处理 UV 与图层贴图，绑定骨架并制作动画"
+  default_prompt: "使用 $blockbench-modeling 创建模型、生成并应用纹理、制作循环动画，检查效果并保存 .bbmodel。"

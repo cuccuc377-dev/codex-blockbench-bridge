@@ -1,0 +1,2354 @@
+[
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "proportional_editing",
+    "name": "衰减编辑",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "proportional_editing_range",
+    "name": "等比例编辑范围",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "slider_weight_brush_size",
+    "name": "权重画笔大小",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "slider_weight_brush_limit",
+    "name": "权重画笔限制",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "weight_brush_xray",
+    "name": "权重画笔 X 光模式",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "weight_brush_blend_mode",
+    "name": "权重画笔混合模式",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "rename",
+    "name": "重命名",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "delete",
+    "name": "删除",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "duplicate",
+    "name": "复制元素",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "copy",
+    "name": "复制",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "cut",
+    "name": "剪切",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "paste",
+    "name": "粘贴",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "outliner_toggle",
+    "name": "显示更多选项",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "search_outliner",
+    "name": "搜索大纲",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "move_to_group",
+    "name": "移动至",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "sort_outliner",
+    "name": "大纲排序",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "unlock_everything",
+    "name": "解锁全部",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "element_colors",
+    "name": "大纲颜色",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "select_window",
+    "name": "选择...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "randomize_marker_colors",
+    "name": "随机化颜色标记",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "undo",
+    "name": "撤销",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "redo",
+    "name": "重做",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "edit_history",
+    "name": "编辑历史...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "search_animations",
+    "name": "搜索动画",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_group",
+    "name": "添加分组",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "group_elements",
+    "name": "分组元素",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "collapse_groups",
+    "name": "折叠分组",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "unfold_groups",
+    "name": "展开所有分组",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "edit_bedrock_binding",
+    "name": "编辑绑定...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_cube",
+    "name": "添加块",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "edit_material_instances",
+    "name": "编辑材质实例",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "element_render_order",
+    "name": "透明度渲染顺序",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "cube_light_emission",
+    "name": "发光",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_billboard",
+    "name": "添加 Billboard",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "vertex_snap_mode",
+    "name": "捕捉模式",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_bounding_box",
+    "name": "添加包围盒",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "convert_texture_mesh_to_cubes",
+    "name": "Convert to Extruded Model",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_texture_mesh",
+    "name": "添加纹理网格",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_armature_bone",
+    "name": "添加骨骼",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_armature",
+    "name": "添加骨架",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_locator",
+    "name": "添加定位器",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_null_object",
+    "name": "添加空目标",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "set_ik_target",
+    "name": "设置 IK 目标",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "set_ik_source",
+    "name": "设定 IK 根",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "set_ik_pole",
+    "name": "Set IK Pole",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_mesh",
+    "name": "添加网格",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "merge_vertices",
+    "name": "合并顶点",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "merge_meshes",
+    "name": "合并网格",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "split_mesh",
+    "name": "分割网格",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "convert_to_mesh",
+    "name": "转换成网格",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "apply_mesh_rotation",
+    "name": "应用旋转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "switch_face_crease",
+    "name": "切换面折叠",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "solidify_mesh_selection",
+    "name": "固化面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "dissolve_edges",
+    "name": "溶解边",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "allow_element_mirror_modeling",
+    "name": "启用镜像编辑模式",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "apply_mirror_modeling",
+    "name": "应用镜像建模",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "add_spline",
+    "name": "添加样条",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "extrude_spline_selection",
+    "name": "挤出样条",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "apply_spline_rotation",
+    "name": "应用旋转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "merge_splines",
+    "name": "合并样条",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "divide_spline_curve",
+    "name": "细分样条段",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "split_spline",
+    "name": "拆分样条",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "generate_voxel_shapes",
+    "name": "Generate Bounding Boxes",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "find_replace",
+    "name": "查找/替换...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "search_textures",
+    "name": "搜索纹理",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "toggle_skin_layer",
+    "name": "切换皮肤叠层",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "convert_minecraft_skin_variant",
+    "name": "转换细臂/宽臂皮肤",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "01 对象和编辑",
+    "id": "explode_skin_model",
+    "name": "皮肤模型分解视图",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "set_vertex_weights",
+    "name": "设置顶点权重",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "add_element",
+    "name": "添加元素",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "cube_counter",
+    "name": "模型统计",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "experimental_settings",
+    "name": "Experimental Settings",
+    "route": "UI 流程",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "set_element_marker_color",
+    "name": "颜色标记",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "open_dev_tools",
+    "name": "打开开发工具",
+    "route": "原生入口 native.run；external_ui",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "resolve_group",
+    "name": "解析分组",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "remove_blank_faces",
+    "name": "移除空白面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "auto_set_cullfaces",
+    "name": "设置自动剔除面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "calculate_vertex_weights",
+    "name": "计算顶点权重",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "select_seam",
+    "name": "选择 UV 接缝",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "apply_texture_to_elements",
+    "name": "应用纹理到元素",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "refresh_texture",
+    "name": "刷新纹理",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "gui_light",
+    "name": "GUI 光照",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "shelf_alignment",
+    "name": "工具架对齐",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "apply_animation_preset",
+    "name": "应用动画映射",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "save_animation_preset",
+    "name": "保存动画预设...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "timeline_setups",
+    "name": "时间线设置",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "save_timeline_setup",
+    "name": "保存时间线设置...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "share_model",
+    "name": "分享...",
+    "route": "原生入口 native.run；publish",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "import_bedrock_attachable",
+    "name": "Import Bedrock Attachable",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "02 其他操作",
+    "id": "slice_bedrock_multiblock",
+    "name": "Slice Bedrock Multiblock",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "weight_brush",
+    "name": "权重画笔",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "move_tool",
+    "name": "移动",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "resize_tool",
+    "name": "调整大小",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "rotate_tool",
+    "name": "旋转",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "pivot_tool",
+    "name": "枢轴工具",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "vertex_snap_tool",
+    "name": "顶点捕捉",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "stretch_tool",
+    "name": "拉伸",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "swap_tools",
+    "name": "交换工具",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "knife_tool",
+    "name": "刀具工具",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "seam_tool",
+    "name": "缝隙连接工具",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "pan_tool",
+    "name": "平移工具",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "brush_tool",
+    "name": "画笔",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "copy_brush",
+    "name": "复制画笔",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "fill_tool",
+    "name": "油漆桶",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "eraser",
+    "name": "橡皮擦",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "color_picker",
+    "name": "拾色器",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "draw_shape_tool",
+    "name": "绘制形状",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "gradient_tool",
+    "name": "渐变工具",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": true
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "selection_tool",
+    "name": "选区工具",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "move_layer_tool",
+    "name": "移动图层",
+    "route": "选工具 + 手势/结构化接口",
+    "tested": false
+  },
+  {
+    "screenshot": "03 交互工具",
+    "id": "predicate_overrides",
+    "name": "编辑谓词覆写...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "new_window",
+    "name": "新窗口",
+    "route": "原生入口 native.run；external_ui",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "open_model_folder",
+    "name": "打开模型文件夹",
+    "route": "原生入口 native.run；external_ui",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "reload",
+    "name": "重启 Blockbench",
+    "route": "原生入口 native.run；close_project",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "view_backups",
+    "name": "查看备份",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "validator_window",
+    "name": "查看模型问题...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "extrude_texture",
+    "name": "拉伸纹理",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "open_model",
+    "name": "打开模型",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "open_from_link",
+    "name": "从链接打开模型...",
+    "route": "原生入口 native.run；external_ui",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_over",
+    "name": "保存模型",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "import_obj",
+    "name": "导入 OBJ 模型",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "project_window",
+    "name": "项目...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "close_project",
+    "name": "关闭项目",
+    "route": "原生入口 native.run；close_project",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "close_other_projects",
+    "name": "Close Other Tabs",
+    "route": "原生入口 native.run；close_project",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "close_projects_to_right",
+    "name": "Close Tabs to the Right",
+    "route": "原生入口 native.run；close_project",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "duplicate_project",
+    "name": "复制项目",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "convert_project",
+    "name": "转换项目",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "switch_tabs",
+    "name": "切换选项卡",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "tab_overview",
+    "name": "标签页总览",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "upload_sketchfab",
+    "name": "上传到 Sketchfab...",
+    "route": "原生入口 native.run；publish",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "save_project",
+    "name": "保存项目",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "save_project_incremental",
+    "name": "增量保存项目",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "save_project_as",
+    "name": "另存为项目",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_legacy_project",
+    "name": "Export Legacy Project",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "import_project",
+    "name": "导入项目",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_blockmodel",
+    "name": "导出方块/物品模型",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "import_java_block_model",
+    "name": "添加 Java 版方块/物品模型",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_bedrock_voxel_shape",
+    "name": "导出 Bedrock 版体素形状",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "import_bedrock_voxel_shape",
+    "name": "导入 Bedrock 版体素形状",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "generate_bedrock_block_box",
+    "name": "复制碰撞/选择框组件",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "generate_bedrock_entity_box",
+    "name": "复制碰撞/命中箱组件",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_bedrock",
+    "name": "导出 Bedrock 版几何",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_entity",
+    "name": "导出 Bedrock 版实体",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_obj",
+    "name": "导出 OBJ 模型",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_gltf",
+    "name": "导出 glTF 模型",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_fbx",
+    "name": "导出 FBX 模型",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_collada",
+    "name": "导出 Collada 模型（dae）",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_stl",
+    "name": "导出为 STL",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_class_entity",
+    "name": "导出为 Java 版实体",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_modded_animations",
+    "name": "导出模组实体动画",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_optifine_full",
+    "name": "导出 OptiFine JEM",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_optifine_part",
+    "name": "Export OptiFine Part",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "import_optifine_part",
+    "name": "导入 OptiFine 部件",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_minecraft_skin",
+    "name": "导出 Minecraft 皮肤",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "04 文件与格式",
+    "id": "export_image",
+    "name": "导出图像",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "slider_animation_length",
+    "name": "动画长度",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "set_animation_end",
+    "name": "设置动画结束点",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "add_animation",
+    "name": "添加动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "create_animation_group",
+    "name": "创建动画组",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "load_animation_file",
+    "name": "导入动画文件",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "export_animation_file",
+    "name": "导出动画...",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "save_all_animations",
+    "name": "保存所有动画",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "bake_ik_animation",
+    "name": "烘焙反向运动",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "bake_animation_into_model",
+    "name": "烘焙动画姿态到模型",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "change_animation_speed",
+    "name": "更改动画速度...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "merge_animation",
+    "name": "合并动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "optimize_animation",
+    "name": "优化动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "retarget_animators",
+    "name": "重新定位动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "bedrock_animation_mode",
+    "name": "Bedrock 版动画模式",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "flip_animation",
+    "name": "翻转动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "copy_animation_pose",
+    "name": "复制动画姿态",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "create_variable_placeholder",
+    "name": "Create Variable Placeholder",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "view_built_in_variables",
+    "name": "View Built-in Variables",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "add_keyframe",
+    "name": "添加关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "previous_keyframe",
+    "name": "上一个关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "next_keyframe",
+    "name": "下一个关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "slider_keyframe_time",
+    "name": "时间码",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_uniform",
+    "name": "均匀缩放",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_bezier_linked",
+    "name": "连接贝塞尔手柄",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_interpolation",
+    "name": "插值",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "reset_keyframe",
+    "name": "重置关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "reset_keyframe_handles",
+    "name": "重置关键帧手柄",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "round_keyframe_values",
+    "name": "取整关键帧值",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "resolve_keyframe_expressions",
+    "name": "解析关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "reverse_keyframes",
+    "name": "反转关键帧",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_column_create",
+    "name": "创建关键帧列",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_column_select",
+    "name": "选择关键帧列",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_select_before_playhead",
+    "name": "Select Keyframes Before Playhead",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "keyframe_select_after_playhead",
+    "name": "Select Keyframes After Playhead",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "timeline_graph_editor",
+    "name": "切换图像编辑器",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "graph_editor_other_graphs",
+    "name": "显示其他图表",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "graph_editor_include_other_graphs",
+    "name": "包含其他轴",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "graph_editor_zero_line",
+    "name": "包括零线",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "play_animation",
+    "name": "播放动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "looped_animation_playback",
+    "name": "循环播放",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "slider_animation_speed",
+    "name": "播放速度",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "jump_to_timeline_start",
+    "name": "转跳到动画起点",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "jump_to_timeline_end",
+    "name": "转跳到动画终点",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "timeline_frame_back",
+    "name": "上一个关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "timeline_frame_forth",
+    "name": "下一个关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "set_timeline_range_start",
+    "name": "设置时间线范围开始",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "set_timeline_range_end",
+    "name": "设置时间线范围结束",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "disable_timeline_range",
+    "name": "禁用时间线范围",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "bring_up_all_animations",
+    "name": "将所有修改后的动画放入时间轴",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "add_all_to_timeline",
+    "name": "全部添加到时间线",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "fold_all_animations",
+    "name": "折叠所有动画",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "clear_timeline",
+    "name": "清除时间轴",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "select_effect_animator",
+    "name": "动画效果",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "timeline_focus",
+    "name": "通道",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "add_marker",
+    "name": "设置标记",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "timeline_setups",
+    "name": "时间线设置",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "save_timeline_setup",
+    "name": "保存时间线设置...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "add_animation_controller",
+    "name": "加入动作控制器",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "05 动画",
+    "id": "add_animation_controller_state",
+    "name": "增加动画控制状态",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "extrude_texture_to_model",
+    "name": "Extrude Texture",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "import_texture",
+    "name": "导入纹理",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "create_texture",
+    "name": "创建纹理",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "append_to_template",
+    "name": "向模板追加元素...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "save_textures",
+    "name": "保存纹理",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "change_textures_folder",
+    "name": "更改纹理位置",
+    "route": "原生入口 native.run；write_file",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "create_texture_group",
+    "name": "创建纹理组",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "create_material",
+    "name": "创建材质",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "generate_pbr_map",
+    "name": "生成 PBR 贴图",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "animated_textures",
+    "name": "播放动态纹理",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "animated_texture_frame",
+    "name": "动态纹理帧",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "animated_texture_fps",
+    "name": "settings.texture_fps",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "animated_texture_editor",
+    "name": "手翻书动画...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "invert_colors",
+    "name": "反转颜色",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "adjust_brightness_contrast",
+    "name": "调整亮度和对比度...",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "adjust_saturation_hue",
+    "name": "调整饱和度和色调...",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "adjust_curves",
+    "name": "调整曲线...",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "adjust_opacity",
+    "name": "调整不透明度...",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "limit_to_palette",
+    "name": "限制为调色板内颜色",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "split_rgb_into_layers",
+    "name": "将 RGB 通道分解成图层",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "split_alpha_into_layer",
+    "name": "分离 Alpha 通道为图层",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "clear_unused_texture_space",
+    "name": "清除纹理未使用的部分",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "flip_texture_x",
+    "name": "水平翻转纹理",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "flip_texture_y",
+    "name": "垂直翻转纹理",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "rotate_texture_cw",
+    "name": "顺时针旋转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "rotate_texture_ccw",
+    "name": "逆时针旋转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "resize_texture",
+    "name": "调整纹理大小...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "06 纹理",
+    "id": "crop_texture_to_selection",
+    "name": "将纹理裁剪至选区内",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "cube_uv_mode",
+    "name": "UV 模式",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_rotation",
+    "name": "UV 旋转",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_grid",
+    "name": "UV 网格",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_maximize",
+    "name": "最大化 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_turn_mapping",
+    "name": "转向映射",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_auto",
+    "name": "自动 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_project_from_view",
+    "name": "自视角投射 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_rel_auto",
+    "name": "自动相对 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_mirror_x",
+    "name": "UV 镜像 X 轴",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_mirror_y",
+    "name": "UV 镜像 Y 轴",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_rotate_left",
+    "name": "向左旋转 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_rotate_right",
+    "name": "向右旋转 UV",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_transparent",
+    "name": "删除面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_reset",
+    "name": "重置面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_apply_all",
+    "name": "应用到所有面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "cullface",
+    "name": "剔除面",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "auto_cullface",
+    "name": "自动剔除面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "face_tint",
+    "name": "着色",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "slider_face_tint",
+    "name": "色调指数",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "move_uv_to_cursor",
+    "name": "将 UV 移至光标",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "merge_uv_vertices",
+    "name": "合并 UV 顶点",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "connect_uv_faces",
+    "name": "连接 UV 面",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "snap_uv_to_pixels",
+    "name": "将 UV 捕捉到像素",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_cycle",
+    "name": "循环 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "uv_cycle_invert",
+    "name": "循环翻转 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "edit_mode_uv_overlay",
+    "name": "显示所有元素",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "paint_mode_uv_overlay",
+    "name": "UV 覆盖",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "07 UV",
+    "id": "move_texture_with_uv",
+    "name": "使用 UV 移动纹理",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_pos_x",
+    "name": "X 轴移动",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_pos_y",
+    "name": "Y 轴移动",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_pos_z",
+    "name": "Z 轴移动",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "position_slider_per_element",
+    "name": "Move Individual Positions",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_size_x",
+    "name": "X 轴尺寸",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_size_y",
+    "name": "Y 轴尺寸",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_size_z",
+    "name": "Z 轴尺寸",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_inflate",
+    "name": "膨胀",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_stretch_x",
+    "name": "拉伸",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_stretch_y",
+    "name": "拉伸",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_stretch_z",
+    "name": "拉伸",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_rotation_x",
+    "name": "X 轴旋转",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_rotation_y",
+    "name": "Y 轴旋转",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_rotation_z",
+    "name": "Z 轴旋转",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "origin_slider_direct_values",
+    "name": "Move Pivot Values Directly",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_origin_x",
+    "name": "X 轴向枢轴",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_origin_y",
+    "name": "Y 轴向枢轴",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "slider_origin_z",
+    "name": "Z 轴向枢轴",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "rotate_x_cw",
+    "name": "旋转 X +90",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "rotate_x_ccw",
+    "name": "旋转 X -90",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "rotate_y_cw",
+    "name": "旋转 Y +90",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "rotate_y_ccw",
+    "name": "旋转 Y -90",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "rotate_z_cw",
+    "name": "旋转 Z +90",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "rotate_z_ccw",
+    "name": "旋转 Z -90",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "flip_x",
+    "name": "X 轴翻转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "flip_y",
+    "name": "Y 轴翻转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "flip_z",
+    "name": "Z 轴翻转",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "flip_in_place_x",
+    "name": "Flip in Place X",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "flip_in_place_y",
+    "name": "Flip in Place Y",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "flip_in_place_z",
+    "name": "Flip in Place Z",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "center_x",
+    "name": "X 轴居中",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "center_y",
+    "name": "Y 轴居中",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "center_z",
+    "name": "Z 轴居中",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "center_lateral",
+    "name": "中央横向",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_up",
+    "name": "上移",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_down",
+    "name": "下移",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_left",
+    "name": "左移",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_right",
+    "name": "右移",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_forth",
+    "name": "前移",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_back",
+    "name": "后移",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_visibility",
+    "name": "可见性",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_locked",
+    "name": "锁定",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_export",
+    "name": "导出",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_autouv",
+    "name": "自动 UV",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_shade",
+    "name": "切换阴影",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_mirror_uv",
+    "name": "镜像 UV",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "update_autouv",
+    "name": "更新自动 UV",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "toggle_stretch_linked",
+    "name": "连锁拉伸",
+    "route": "参数 native.set",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "origin_to_geometry",
+    "name": "枢轴居中",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "center_individual_pivots",
+    "name": "居中独立驱轴",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "bone_reset_toggle",
+    "name": "重置骨骼",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "scale",
+    "name": "缩放...",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_keyframe_back",
+    "name": "向前移动关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_keyframe_forth",
+    "name": "向后移动关键帧",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_graph_keyframes_up",
+    "name": "上移关键帧图表",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "08 变换",
+    "id": "move_graph_keyframes_down",
+    "name": "下移关键帧图表",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "create_empty_layer",
+    "name": "创造空白图层",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "import_layer",
+    "name": "导入图层",
+    "route": "原生入口 native.run；file_dialog",
+    "tested": false
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "create_layer_group",
+    "name": "Create Layer Group",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "resolve_layer_group",
+    "name": "Resolve Layer Group",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "enable_texture_layers",
+    "name": "启用图层",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "disable_texture_layers",
+    "name": "禁用图层",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "layer_opacity",
+    "name": "图层透明度",
+    "route": "参数 native.set",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "layer_to_texture_size",
+    "name": "放大图层至纹理尺寸",
+    "route": "原生入口 native.run",
+    "tested": false
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "merge_layer_down",
+    "name": "向下合并",
+    "route": "原生入口 native.run",
+    "tested": true
+  },
+  {
+    "screenshot": "09 图层",
+    "id": "crop_layer_to_selection",
+    "name": "将图层裁切至选区内",
+    "route": "原生入口 native.run",
+    "tested": false
+  }
+]
