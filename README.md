@@ -1,12 +1,12 @@
 # Codex × Blockbench：建模、贴图与动画
 
-**当前版本 1.2.0。** 让 Codex/GPT 通过本机插件创建和编辑 Blockbench 模型、生成和绘制纹理、处理 UV 与图层、绑定骨架和制作动画。新增原生工具发现、模式与组件选择、参数控件、子菜单、弹窗及操作后参数控制，覆盖用户九张截图的工具入口和操作流程。
+**当前版本 1.3.0。** 让 Codex/GPT 通过本机插件创建和编辑 Blockbench 模型、生成和绘制纹理、处理 UV 与图层、绑定骨架和制作动画。支持窗口放在后台或最小化时继续执行接口指令，保留原生工具发现、模式与组件选择、参数控件、子菜单、弹窗及操作后参数控制。
 
 已在本机 **Blockbench 5.2.2** 验证模型 API；插件声明支持桌面版 5.2.0 及以上。其他版本未实测。Python 需要 3.10+；只有开发构建/测试需要 Node.js 20+。不需要 API Key，不需要 npm install。
 
 ## 安装
 
-从 [GitHub Releases](https://github.com/cuccuc377-dev/codex-blockbench-bridge/releases) 下载 `codex-blockbench-bridge-1.2.0.zip` 并解压，或使用 Git 获取本项目：
+从 [GitHub Releases](https://github.com/cuccuc377-dev/codex-blockbench-bridge/releases) 下载 `codex-blockbench-bridge-1.3.0.zip` 并解压，或使用 Git 获取本项目：
 
 ```powershell
 git clone https://github.com/cuccuc377-dev/codex-blockbench-bridge.git
@@ -31,9 +31,19 @@ python "$env:USERPROFILE\.codex\skills\blockbench-modeling\scripts\blockbench.py
 
 本项目也可免安装调用：`python skill/blockbench-modeling/scripts/blockbench.py status`。插件工具菜单里有 **Codex Bridge：连接状态** 与 **启动 / 停止**。
 
-从旧版本升级：运行安装脚本后，在 Blockbench 插件列表中重新加载本地插件。`status` 应报告 `version: 1.2.0`。如果你以前加载的是自己复制到其他目录的文件，请重新选择这次交付的 JS。
+从旧版本升级：运行安装脚本后，在 Blockbench 插件列表中重新加载本地插件。`status` 应报告 `version: 1.3.0` 和 `background.enabled: true`。如果你以前加载的是自己复制到其他目录的文件，请重新选择这次交付的 JS。
 
 普通云端 ChatGPT 无法直接访问你电脑上的 Blockbench；需要本机 Codex 或能运行本客户端的本机代理。此实现通过技能调用脚本，不要求额外配置 MCP 服务器。
+
+## 后台与最小化运行
+
+加载 1.3 插件后，Blockbench 可以放在其他窗口后面或最小化。方块/网格建模、纹理生成与绘画、UV 和图层、骨架/关键帧、动画播放、模型保存以及结构化导出均通过本机接口执行，不需要鼠标占用窗口。`screenshot` 直接渲染模型，在最小化时也可以生成 PNG；动画姿势检查使用 `animation.preview` 指定时间。
+
+通信轮询、心跳和插件超时使用 Blockbench 允许的 Node 计时器。当原生渲染暂停时，后台调度继续处理待更新的场景和动画时间线；前台正常渲染时让原生循环接管。插件不会将窗口置顶、自动恢复窗口，也不会修改全局“后台渲染”设置或新增系统保活服务。
+
+运行 `status` 可查看 `background.enabled`、`scheduler: node`、`visibility`、`focused`、动画时间及最近错误。无需在后台持续渲染整个界面，模型截图按请求生成。电脑需要保持唤醒，Blockbench 需要保持运行。
+
+需要真实鼠标手势的刀具、顶点捕捉和权重笔刷，以及系统文件选择器和部分自定义窗口，仍需前台操作。能用结构化接口完成的操作优先在后台完成；不能把“工具已选择”视为后台手势已经执行。
 
 ## 可以做什么
 
@@ -91,19 +101,19 @@ python .\skill\blockbench-modeling\scripts\blockbench.py call native.run --file 
 $bbClient = '.\skill\blockbench-modeling\scripts\blockbench.py'
 python $bbClient sessions
 python $bbClient create '方块与网格机器人' --format free
-python $bbClient batch .\examples\robot.json
+python $bbClient batch .\skill\blockbench-modeling\assets\robot.json
 python $bbClient scene --detail
 python $bbClient screenshot .\output\robot.png
 python $bbClient save .\output\robot.bbmodel
 ```
 
-示例包含 8 个方块、2 个网格和 1 个组；创建发生在新项目中，不会清空原有项目。`examples/robot.json` 只创建几何体；发行包中的 `examples/robot.bbmodel` 与截图来自真实应用联调，额外给身体和天线赋了橙色贴图。
+示例包含 8 个方块、2 个网格和 1 个组；创建发生在新项目中，不会清空原有项目。技能 `assets/robot.json` 只创建几何体；发行包中的 `examples/robot.bbmodel` 与截图来自真实应用联调，额外给身体和天线赋了橙色贴图。
 
 在上述机器人上继续添加动画：
 
 ```powershell
-python $bbClient batch .\examples\robot-rig.json
-python $bbClient call animation.create --file .\examples\robot-animation.json
+python $bbClient batch .\skill\blockbench-modeling\assets\robot-rig.json
+python $bbClient call animation.create --file .\skill\blockbench-modeling\assets\robot-animation.json
 ```
 
 第二条命令返回动画 UUID。随后可通过 `animation.preview` 或 `animation.play` 预览。发行包的 `examples/animated-robot.bbmodel` 是已经添加程序纹理和 18 个关键帧的可编辑示例；`animated-robot.gif` 是从真实 Blockbench 视口采集 24 帧制作的预览。
@@ -147,13 +157,12 @@ Codex ← Python 客户端 ← JSON 响应
 
 ```powershell
 node tools/build.mjs
-node --test tests/mailbox.test.cjs
-node --test tests/plugin.test.cjs
-python -m unittest discover -s tests -p 'test_*.py' -v
 python tools/package.py
 ```
 
 构建把 `src/` 中的建模、原生对象、纹理、动画、通信和入口模块合为一个可直接加载的插件，同时复制到技能资源目录。
+
+公开仓库的示例参数位于 `skill/blockbench-modeling/assets/`，不依赖顶层 `examples/`。`tests/` 是本地开发夹具，不随公开仓库分发；包含该目录的开发副本可运行 `node --test tests/*.test.cjs` 和 `python -m unittest discover -s tests -p 'test_*.py' -v`。公开仓库保留下面的真实应用集成测试脚本。
 
 真实应用集成测试使用单独的测试配置目录启动本机 Blockbench（不接触用户正常配置），然后运行：
 
@@ -169,6 +178,17 @@ python tools/render_demo_gif.py
 ```
 
 根据本机安装路径调整命令。调试端口仅供开发测试；日常插件使用完全不需要它。测试完成后退出该测试实例。
+
+后台集成测试需要独立的 `.cache/bb-background-profile` 配置目录，不能复用正常工作窗口：
+
+```powershell
+$backgroundProfile = Join-Path (Get-Location).Path '.cache\bb-background-profile'
+Start-Process -FilePath $blockbenchExe -ArgumentList @('--userData', ('"' + $backgroundProfile + '"'), '--remote-debugging-port=9337', '--no-first-run') -WindowStyle Hidden
+# 等待测试实例加载完成，再运行：
+node tools/test_background.mjs
+```
+
+该开发脚本在隔离渲染进程中运行构建后的插件，通过仅限测试的模块适配器将通信目录放到测试配置下；不写原生插件权限记录。创建测试项目后将窗口最小化，断开调试连接，通过真实 Python 客户端和文件队列测试 70 秒心跳、动画、贴图、绘画、截图、保存与撤销。结果写入 `artifacts/background/results.json`。完成后退出这个测试实例。
 
 只有开发辅助脚本 `render_demo_gif.py` 需要 Pillow；插件和技能客户端不依赖它。`animation-export` 的 JSON 是 Blockbench 数据快照；`export gltf` 等通过原生编译器输出目标格式。游戏特定导出应在 Blockbench 的对应格式中完成。
 

@@ -1,6 +1,6 @@
 /* Model operations. Runs inside Blockbench; deliberately no eval or arbitrary code API. */
 function createModelBridge() {
-    const VERSION = '1.2.0';
+    const VERSION = '1.3.0';
     let extensions;
     const fail = (code, message) => { const e = new Error(message); e.code = code; throw e; };
     const check = (condition, message) => { if (!condition) fail('INVALID_PARAMS', message); };

@@ -8,7 +8,7 @@ Global options precede the subcommand. `--params '{...}'` is available but a fil
 
 | Method | Parameters / result |
 |---|---|
-| `bridge.status` | `{}` → plugin version, Blockbench version, current project, operation names |
+| `bridge.status` | `{}` → plugin version, Blockbench version, current project, operation names; plugin 1.3+ adds `background` with enabled/scheduler/visibility/focused/playing/timeline_time/fallback_ticks/last_error |
 | `project.list` | `{}` → open tabs with UUID, name, format, active flag |
 | `project.create` | `{name,format?:"free",texture_size?:[64,64]}` → new project; previous tabs remain |
 | `project.select` | `{id:project_uuid}` → selects an existing tab |

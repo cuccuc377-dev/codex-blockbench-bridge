@@ -8,7 +8,7 @@ version = json.loads((root / "package.json").read_text(encoding="utf-8"))["versi
 output = root / f"dist/codex-blockbench-bridge-{version}.zip"
 output.parent.mkdir(exist_ok=True)
 with ZipFile(output, "w", ZIP_DEFLATED) as archive:
-    for directory in ["src", "skill", "examples", "tests", "tools"]:
+    for directory in ["src", "skill", "tools"]:
         for file in (root / directory).rglob("*"):
             if file.is_file() and "__pycache__" not in file.parts and file.suffix != ".pyc":
                 archive.write(file, file.relative_to(root))
@@ -23,4 +23,7 @@ with ZipFile(output, "w", ZIP_DEFLATED) as archive:
         file = root / "artifacts" / name
         if file.exists():
             archive.write(file, "validation/" + name)
+    background_result = root / "artifacts/background/results.json"
+    if background_result.exists():
+        archive.write(background_result, "validation/background-test.json")
 print(output)

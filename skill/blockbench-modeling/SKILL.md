@@ -5,13 +5,21 @@ description: Model, texture, rig and animate in Blockbench using cubes, meshes, 
 
 # Blockbench modeling
 
-Use the installed `Codex Blockbench Bridge` 1.2+ plugin and this skill's Python client. Resolve paths relative to this `SKILL.md`; `scripts/blockbench.py` and `scripts/primitives.py` have no third-party dependencies (Python 3.10+). If `status` reports an older version, reload the updated plugin from `assets/codex_blockbench_bridge.js` before using new features.
+Use the installed `Codex Blockbench Bridge` 1.3+ plugin and this skill's Python client. Resolve paths relative to this `SKILL.md`; `scripts/blockbench.py` and `scripts/primitives.py` have no third-party dependencies (Python 3.10+). If `status` reports an older version, reload the updated plugin from `assets/codex_blockbench_bridge.js` before using new features.
 
 ## Connect and inspect
 
 Run `python <skill>/scripts/blockbench.py status`. If discovery fails, run `sessions`. The plugin must be loaded in Blockbench desktop 5.2+, using `assets/codex_blockbench_bridge.js` (File → Plugins → Load Plugin from File). Its native permission prompt requests only `~/.codex/blockbench-bridge`; the user must grant that folder permission. Do not change Blockbench permission storage or expose native APIs to work around denial. The plugin is desktop-only; a plain cloud chat without access to this computer cannot reach it.
 
 If multiple instances are live, use `--session ID` before the subcommand; never guess which document to edit. Read `scene` before editing an existing project. Retain its project UUID and use `--project UUID` before mutations to detect tab changes. Resolve existing targets by UUID; names are accepted only when unique. Read `scene --detail --ids UUID` for mesh vertex/face keys and UVs.
+
+## Work in the background
+
+Leave Blockbench unfocused or minimized when the user wants background work. Version 1.3 uses Node timers for the file queue, heartbeat and plugin timeouts, plus a fallback scheduler for pending scene updates and animation playback when native rendering pauses. `status.background` reports `enabled`, `scheduler`, `visibility`, `focused`, `playing`, `timeline_time` and `last_error`. A hidden window is not a disconnected session.
+
+Prefer structured model, mesh, texture, UV, layer/paint, keyframe, save and export methods. `screenshot` renders the model directly, including while minimized; it does not capture the desktop. Use `animation.preview` at explicit times for reproducible pose checks. Do not focus/restore the app or change its global background-rendering settings merely to send bridge requests.
+
+Viewport mouse gestures (knife, vertex snapping, weight brush), OS file choosers and unsupported custom windows still require foreground interaction. Use equivalent structured operations where appropriate; if a required gesture has no such route, state the specific foreground step. Do not claim every native tool is background-safe merely because it can be selected. Blockbench must remain running and the computer awake; closing the app or suspending Windows stops execution.
 
 ## Model
 

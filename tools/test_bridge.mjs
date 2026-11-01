@@ -22,8 +22,9 @@ function evaluate(expression){return new Promise((resolve,reject)=>{
     pending.set(id,{resolve,reject,timer});socket.send(JSON.stringify({id,method:'Runtime.evaluate',params:{expression,returnByValue:true,awaitPromise:true}}));
 });}
 const root=path.resolve('.cache/integration-bridge');
-const bridge=createFileBridge({fs,path,root,id:'integration',engine:{version:'1.2.0',call:(method,params)=>evaluate(`window.__codexTestCore.call(${JSON.stringify(method)}, ${JSON.stringify(params)})`)}});
+const bridge=createFileBridge({fs,path,root,id:'integration',engine:{version:JSON.parse(fs.readFileSync('package.json','utf8')).version,call:(method,params)=>evaluate(`window.__codexTestCore.call(${JSON.stringify(method)}, ${JSON.stringify(params)})`)}});
 const client='skill/blockbench-modeling/scripts/blockbench.py';
+const examples='skill/blockbench-modeling/assets';
 function cli(args){return new Promise((resolve,reject)=>{
     const child=spawn('python',[client,'--bridge-dir',root,...args]);let out='',err='';
     child.stdout.on('data',d=>out+=d);child.stderr.on('data',d=>err+=d);child.on('error',reject);
@@ -35,7 +36,7 @@ try {
     bridge.start();
     console.log(await cli(['status']));
     console.log(await cli(['create','Codex 方块与网格机器人']));
-    const built=await cli(['batch','examples/robot.json']);console.log({batch:built.project});
+    const built=await cli(['batch',`${examples}/robot.json`]);console.log({batch:built.project});
     const texture=await evaluate(`(()=>{const c=document.createElement('canvas');c.width=c.height=16;const x=c.getContext('2d');x.fillStyle='#ffb24a';x.fillRect(0,0,16,16);return c.toDataURL()})()`);
     fs.writeFileSync('.cache/texture.png',Buffer.from(texture.split(',')[1],'base64'));
     const imported=await cli(['texture','.cache/texture.png']);
@@ -46,7 +47,7 @@ try {
     console.log(await cli(['save','artifacts/robot.obj','--format','obj','--overwrite']));
     console.log(await cli(['screenshot','artifacts/robot.png','--overwrite']));
     const scene=await cli(['scene','--detail']);fs.writeFileSync('artifacts/robot-scene.json',JSON.stringify(scene,null,2));
-    await cli(['batch','examples/robot-rig.json']);
+    await cli(['batch',`${examples}/robot-rig.json`]);
     const materialParams={ids:scene.elements.filter(e=>['cube','mesh'].includes(e.type)).map(e=>e.uuid),name:'robot_atlas.png',width:256,height:256,tile:24,padding:2,material:{pattern:'metal',colors:['#7297b3','#adc7da','#d5e6ef'],cell:8},materials:{
         body:{pattern:'metal',colors:['#ad5d25','#e2a448','#f9c864'],cell:8},
         head:{pattern:'metal',colors:['#318d9c','#58bec9','#9ce6e5'],cell:8},
@@ -59,7 +60,7 @@ try {
     await cli(['texture','artifacts/robot-atlas.png','--replace',atlas.texture.uuid]);
     const cable=await cli(['call','texture.generate','--params',JSON.stringify({name:'cable.png',pattern:'checker',width:32,colors:['#152e3b','#315866'],cell:4})]);
     await cli(['call','texture.map','--params',JSON.stringify({ids:['back_cable'],texture:cable.uuid})]);
-    const animation=await cli(['call','animation.create','--file','examples/robot-animation.json']);
+    const animation=await cli(['call','animation.create','--file',`${examples}/robot-animation.json`]);
     console.log({animation:animation.name,tracks:animation.tracks.length});
     console.log(await cli(['animation-export','artifacts/robot-animation.json','--id',animation.uuid,'--overwrite']));
     await cli(['call','preview.camera','--params',JSON.stringify({position:[37,29,48],target:[0,15,0]})]);

@@ -1,6 +1,6 @@
 {
   "name": "codex-blockbench-bridge",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": true,
   "description": "Blockbench plugin and Codex skill for cube and mesh modeling, textures, UVs and animation",
   "repository": {
